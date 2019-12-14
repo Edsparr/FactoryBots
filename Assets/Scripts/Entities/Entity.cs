@@ -42,7 +42,7 @@ public abstract class Entity : MonoBehaviour
 		HealthUpdated?.Invoke(this, newHp);
 
 		health = newHp;
-		if (health < 0)
+		if (health <= 0)
 			Kill();
 	}
 
